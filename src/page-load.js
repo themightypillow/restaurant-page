@@ -1,5 +1,3 @@
-import {homeImg, homeHeadline, homeWiki} from "./info";
-
 const loadPage = () => {
   const header = document.createElement("header");
   const heading = document.createElement("h1");
@@ -17,28 +15,14 @@ const loadPage = () => {
   const navLink3 = document.createElement("div");
   navLink3.textContent = "Contact";
   nav.appendChild(navLink3);
-  
-  const mainImg = document.createElement("img");
-  mainImg.src = homeImg;
-  mainImg.id = "main-img";
-  const blurb = document.createElement("p");
-  blurb.textContent = homeHeadline;
-  const wiki = document.createElement("p");
-  wiki.textContent =  homeWiki;
 
-  const home = document.createElement("div");
-  home.id = "home";
-  home.appendChild(mainImg);
-  home.appendChild(blurb);
-  home.appendChild(wiki);
+  const body = document.createElement("div");
+  body.id = "content-body";
+  body.appendChild(nav);
 
-  const content = document.createElement("div");
-  content.appendChild(nav);
-  content.appendChild(home);
-
-  const page = document.querySelector("#content");
-  page.appendChild(header);
-  page.appendChild(content);
+  const content = document.querySelector("#content");
+  content.appendChild(header);
+  content.appendChild(body);
 };
 
 export default loadPage;
