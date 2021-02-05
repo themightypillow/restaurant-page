@@ -71,9 +71,20 @@ const menuItems = [
   }
 ];
 
+const contactInfo = {
+  address: "123 Main Street, Townsville, NY 12345",
+  phone: "(123) 555-6789",
+  email: "info@thefry.shop",
+  hours: {
+    week: "11am - 9pm",
+    weekend: "11am - 11pm"
+  }
+};
+
 export {
   homeImg,
   homeHeadline,
   homeWiki,
-  menuItems
+  menuItems,
+  contactInfo
 }
