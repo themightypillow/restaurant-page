@@ -74,5 +74,6 @@ const menuItems = [
 export {
   homeImg,
   homeHeadline,
-  homeWiki
+  homeWiki,
+  menuItems
 }
