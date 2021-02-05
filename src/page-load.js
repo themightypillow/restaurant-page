@@ -4,17 +4,23 @@ const loadPage = () => {
   heading.textContent = "The Fry Shop";
   header.appendChild(heading);
 
+  const homeTab = document.createElement("div");
+  homeTab.textContent = "Home";
+  homeTab.id = "home-tab";
+  homeTab.classList.add("active");
+  
+  const menuTab = document.createElement("div");
+  menuTab.textContent = "Menu";
+  menuTab.id = "menu-tab";
+  
+  const contactTab = document.createElement("div");
+  contactTab.textContent = "Contact";
+  contactTab.id = "contact-tab";
+
   const nav = document.createElement("nav");
-  const navLink1 = document.createElement("div");
-  navLink1.textContent = "Home";
-  navLink1.classList.add("active");
-  nav.appendChild(navLink1);
-  const navLink2 = document.createElement("div");
-  navLink2.textContent = "Menu";
-  nav.appendChild(navLink2);
-  const navLink3 = document.createElement("div");
-  navLink3.textContent = "Contact";
-  nav.appendChild(navLink3);
+  nav.appendChild(homeTab);
+  nav.appendChild(menuTab);
+  nav.appendChild(contactTab);
 
   const body = document.createElement("div");
   body.id = "content-body";
